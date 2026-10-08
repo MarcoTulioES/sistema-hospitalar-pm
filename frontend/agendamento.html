@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - Sistema Hospitalar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header"><i class="ph ph-heartbeat"></i> HospManager</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html"><i class="ph ph-squares-four"></i> Dashboard</a></li>
+            <li class="nav-item"><a href="pacientes.html"><i class="ph ph-users"></i> Pacientes</a></li>
+            <li class="nav-item"><a href="profissionais.html"><i class="ph ph-user-md"></i> Profissionais</a></li>
+            <li class="nav-item active"><a href="agendamento.html"><i class="ph ph-calendar-plus"></i> Agendamentos</a></li>
+            <li class="nav-item"><a href="internacoes.html"><i class="ph ph-bed"></i> Internações & Quartos</a></li>
+            <li class="nav-item"><a href="historico.html"><i class="ph ph-file-text"></i> Histórico Médico</a></li>
+        </ul>
+    </aside>
+    
+    <main class="main-content">
+        <header class="header"><div class="user-profile"><i class="ph ph-user-circle" style="font-size: 24px;"></i> Administrador</div></header>
+
+        <div class="content-wrapper">
+            <h1 class="page-title">Agendamento e Controlo de Consultas</h1>
+
+            <div class="panel">
+                <div class="panel-header"><h2>Agendar Nova Consulta</h2></div>
+                <form class="form-grid">
+                    <div class="form-group">
+                        <label>Paciente</label><select><option>João da Silva (CPF: 123...)</option></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Profissional Responsável</label><select><option>Dra. Ana Costa - Cardiologia</option></select>
+                    </div>
+                    <div class="form-group"><label>Data</label><input type="date"></div>
+                    <div class="form-group"><label>Horário</label><input type="time"></div>
+                    <div class="form-group full-width"><label>Motivo da Consulta</label><input type="text" placeholder="Ex: Retorno de exames, Dores no peito..."></div>
+                    <div class="form-group full-width"><label>Observações Médicas (Opcional)</label><textarea rows="3" placeholder="Informações adicionais..."></textarea></div>
+                    <div class="form-group full-width" style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                        <button type="button" class="btn btn-primary"><i class="ph ph-calendar-plus"></i> Confirmar Agendamento</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

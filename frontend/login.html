@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HospManager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="panel login-box">
+            <div class="login-header">
+                <i class="ph ph-heartbeat" style="font-size: 56px; color: var(--primary-color);"></i>
+                <h2>HospManager</h2>
+                <p>Acesso ao painel administrativo</p>
+            </div>
+            <form class="form-grid" action="index.html">
+                <div class="form-group full-width">
+                    <label>E-mail ou CPF</label>
+                    <input type="text" placeholder="Insira o seu acesso" required>
+                </div>
+                <div class="form-group full-width">
+                    <label>Palavra-passe</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <div class="form-group full-width" style="margin-top: 8px;">
+                    <button type="submit" class="btn btn-primary login-btn">
+                        <i class="ph ph-sign-in"></i> Entrar no Sistema
+                    </button>
+                </div>
+                <div class="form-group full-width">
+                    <a href="#" class="forgot-password">Esqueci a minha palavra-passe</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
